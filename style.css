@@ -1,0 +1,179 @@
+/* reset */
+
+:root {
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  transition: all 0.1s ease;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+}
+
+/* utillity classes */
+
+.hide {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* elements */
+
+.container {
+  max-width: 30rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  height: 700px;
+}
+
+.container {
+  box-shadow: 0 -15px 30px -5px #c986d7;
+  padding: 1rem;
+}
+
+h4 {
+  margin: auto;
+  text-align: center;
+}
+
+form,
+.form-block {
+  width: 100%;
+  align-items: center;
+}
+
+form {
+  padding: 1rem;
+  max-height: 30rem;
+  max-width: 30rem;
+  justify-content: space-around;
+}
+
+.form-block {
+  padding: 1rem;
+}
+
+label,
+textarea {
+  width: 80%;
+  padding: 0.5rem;
+}
+
+label {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+  height: 7rem;
+  color: #fff;
+  border: 1px solid rgba(109, 107, 107, 0.719);
+  background: rgb(49, 49, 49);
+  border-radius: 0.3rem;
+}
+
+.text-wrapper {
+  align-self: flex-start;
+}
+
+.error-wrapper {
+  height: 2rem;
+}
+
+.error {
+  padding: 0.5rem;
+  color: #f166ab;
+  font-weight: 600;
+}
+
+input[type="button"],
+input[type="reset"] {
+  background: #7eb750;
+  background: linear-gradient(to top, #4b5905, #88a402);
+  color: #fff;
+  padding: 0.3rem 2rem;
+  width: 8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid #5b5b5b;
+  margin: 0.5rem auto;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+input[type="button"]:focus,
+input[type="reset"]:focus,
+textarea:focus {
+  outline: 1px solid #88a402;
+}
+
+.result {
+  width: 90%;
+  height: 9rem;
+  border: 2px inset #88a402;
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+
+.encoded-message {
+  padding: 0.5rem;
+  animation: fade-in 1s;
+}
+
+.encoded-message-part {
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn:hover {
+    filter: brightness(140%);
+    transition: 0.5s;
+  }
+}
