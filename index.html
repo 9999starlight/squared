@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Square Code</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<title>Square Code</title>
-</head>
-
-<body>
-	<div class="container flex flex-column flex-center">
-		<h1>Square Code</h1>
-		<form action="" class="flex flex-column">
-			<div class="form-block flex flex-column flex-center">
-				<label for="stringToEncode">Enter the message you want to encode. Maximum number of characters is
-					81</label>
-				<textarea id="stringToEncode" placeholder="Enter your message" maxlength="81"></textarea>
-				<div class="error-wrapper">
-					<p class="error hide">Wrong entry, please try again.</p>
-				</div>
-			</div>
-			<div class="form-block flex flex-column flex-center">
-				<input type="button" value="Submit" id="btnSubmit" class="btn">
-				<input type="button" value="Clear all" id="clearAll" class="btn">
-			</div>
-		</form>
-		<div class="result flex flex-column">
-			<h4>Your encoded message is:</h4>
-			<div class="message-wrapper"></div>
-		</div>
-	</div>
-	<script src="main.js"></script>
-</body>
-
+  <body>
+    <div class="container flex flex-column flex-center">
+      <h1>Square Code</h1>
+      <form action="" class="flex flex-column">
+        <div class="form-block flex flex-column flex-center">
+          <label for="stringToEncode"
+            >Enter the message you want to encode. Maximum number of characters
+            is 81</label
+          >
+          <textarea
+            id="stringToEncode"
+            placeholder="Enter your message"
+            maxlength="81"
+          ></textarea>
+          <div class="error-wrapper">
+            <p class="error hide">Wrong entry, please try again.</p>
+          </div>
+        </div>
+        <div class="form-block flex flex-column flex-center">
+          <input type="button" value="Submit" id="btnSubmit" class="btn" />
+          <input type="button" value="Clear all" id="clearAll" class="btn" />
+        </div>
+      </form>
+      <div class="result flex flex-column">
+        <h4>Your encoded message is:</h4>
+        <div class="message-wrapper"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
